@@ -1,2 +1,3 @@
 # LandingPage
-From odin project, end of css fundementals
+
+https://www.theodinproject.com/lessons/foundations-landing-page
