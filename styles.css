@@ -2,8 +2,12 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* These containers are required for nice shrining of the page.
+First shrinks 'margin' then the content.
+*/
 .quote_container,
 .white_container,
 .dark_container{
@@ -16,11 +20,6 @@ body {
 
 .dark_container {
     background-color: #1F2937;
-}
-
-.header_container,
-.footer {
-    height: 5vh;
 }
 
 .quote_container {
@@ -47,11 +46,11 @@ body {
     gap: 16px;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
-.header {
-    padding: 8px 0;
+.header
+,footer {
+    padding: 16px 0;
 }
 
 .header_logo {
@@ -74,19 +73,11 @@ body {
 }
 
 .hero {
-    padding: 16px 0;
+    padding: 130px 0;
 }
 
 .hero > * {
     flex: 1;
-}
-
-.hero_text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 8px;
 }
 
 .hero_title {
@@ -97,6 +88,7 @@ body {
 .hero_description {
     color: #E5E7EB;
     font-weight: 100;
+    padding: 16px 0;
 }
 
 .hero_text>button {
@@ -114,7 +106,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 200px;
+    height: 250px;
     background-color: grey;
     color: #E5E7EB;
 }
@@ -123,7 +115,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 32px 0;
+    padding: 130px 0;
 }
 
 .content_info {
@@ -137,6 +129,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     gap: 32px;
 }
 
@@ -161,12 +154,11 @@ body {
     text-align: center;
 }
 
-
 .quote {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 32px 0;
+    padding: 75px 0;
 }
 
 .quote_text {
@@ -185,7 +177,7 @@ body {
 .sign_up {
     justify-items: center;
     align-items: center;
-    padding: 32px 0;
+    padding: 75px 0;
 }
 
 .sign_up_box {
