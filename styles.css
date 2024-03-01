@@ -4,23 +4,9 @@ body {
     box-sizing: border-box;
 }
 
-.page_layout {
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-}
-
-.page_layout > * {
-    flex: 1;
-}
-
-.header_container,
-.hero_container,
-.main_container,
 .quote_container,
-.sign_up_container,
-.footer_container{
+.white_container,
+.dark_container{
     width: 100%;
     padding: 8px 0;
     display: flex;
@@ -28,9 +14,7 @@ body {
     justify-content: center;
 }
 
-.header_container,
-.hero_container,
-.footer_container {
+.dark_container {
     background-color: #1F2937;
 }
 
